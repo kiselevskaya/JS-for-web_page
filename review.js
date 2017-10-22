@@ -1,5 +1,6 @@
 function color_alert(){
     alert('clicked button with JS function')
+    var dd1 = document.getElementById("d1").style.color="#E5E513";
     var dd2 = document.getElementById("d2");
     var dd3 = document.getElementById("d3");
 
