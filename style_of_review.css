@@ -1,0 +1,35 @@
+#d1 {
+  text-align: center;
+  color: #3FC4D7;
+  font-family: "Purisa";
+  border: 3px solid #13E57C;
+  border-style: dashed;
+  font-size: 16pt;
+}
+#d2 {
+  color: #75E109;
+  font-size: 24pt;
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+}
+#d3 {
+  color: #0373FB;
+  font-size: 24pt;
+  text-align: center;
+  margin: 20px;
+  padding: 25px;
+}
+body{
+  background: #8C7272;
+  margin: 30px;
+}
+.morning {
+  background: #038B7D;
+}
+.evening {
+  background: #0B3D46;
+}
+input {
+  background-color: #6D9B84;
+}
