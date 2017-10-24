@@ -5,9 +5,17 @@ function do_color(){
   dE1.style.backgroundColor = color;
 }
 
-function do_lime(){
+function do_square(){
   var canvas = document.getElementById("div1");
+  var sizeinput = document.getElementById("cc1");
+  var size = sizeinput.value;
   var context = canvas.getContext("2d");
   context.clearRect(0, 0, canvas.width, canvas.height);
-  canvas.style.backgroundColor = "#D4D41F";
+  context.fillStyle = "#000000";
+  context.fillRect(10,10,size,size);
+
+  var posX = parseInt(size);
+  posX += 30;
+  context.fillStyle = "#000000";
+  context.fillRect(posX,10,size,size);
 }

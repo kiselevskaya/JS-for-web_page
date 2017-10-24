@@ -10,11 +10,12 @@ canvas {
   height: 200px;
   margin: 10px;
   border:2px solid #000000;
+  background-color: #D4D41F;
 }
 body {
-  background: #DACEBE;
+  background: #F5DDC7;
   margin: 20px;
 }
 input {
-  background-color: ##97C3B6;
+  background-color: #CACECE;
 }
