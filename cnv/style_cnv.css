@@ -2,22 +2,19 @@
   text-align: center;
   color: #3FC4D7;
   font-family: "Purisa";
-  border: 3px dashed #69AA00;
   font-size: 16pt;
   margin: 10pt;
 }
 canvas {
-  width: 200px;
-  height: 100px;
+  width: 400px;
+  height: 200px;
   margin: 10px;
-  border:1px solid #000000;
+  border:2px solid #000000;
 }
 body {
-  background: #8C7272;
+  background: #DACEBE;
   margin: 20px;
 }
 input {
-  background-color: #69AA00;
-  margin: 10pt;
-  font-size: 10pt;
+  background-color: ##97C3B6;
 }
