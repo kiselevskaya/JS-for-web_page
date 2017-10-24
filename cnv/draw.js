@@ -20,7 +20,12 @@ function orange_color(){
   context.fillText("@",90,90);
   context.fillText("@",200,90);
 }
-function blue_color(){
+function green_color(){
   var dE2 = document.getElementById("div2");
-  dE2.style.backgroundColor = "#3CD371";
+  dE2.style.backgroundColor = "#1FD41F";
+
+  var canvas = document.getElementById("div1");
+  var context = canvas.getContext("2d");
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  canvas.style.backgroundColor = "#D4D41F";
 }
