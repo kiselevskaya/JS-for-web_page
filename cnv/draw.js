@@ -15,10 +15,10 @@ function orange_color(){
   context.arc(200,75,50,0,2*Math.PI);
   context.stroke();
 
-  //context.fillStyle = "#000000";
-  //context.font = "20px Arial";
-  //context.fillText = ("Hello",75,75);
-
+  context.fillStyle = "#0F0000";
+  context.font = "30px Arial";
+  context.fillText("@",90,90);
+  context.fillText("@",200,90);
 }
 function blue_color(){
   var dE2 = document.getElementById("div2");
