@@ -1,21 +1,21 @@
-function do_color(){
-  var dE1 = document.getElementById("div1");
-  var colorinput = document.getElementById("cc2");
-  var color = colorinput.value;
-  dE1.style.backgroundColor = color;
+var image;
+var grayscale;
+var scanvas;
+function upload(){
+  var finput = document.getElementById("finput");
+  image = new SimpleImage(finput);
+  grayscale = image;
+  var canvas = document.getElementById("cnv");
+  image.drawTo(canvas);
+  scanvas = document.getElementById("scnv");
+  image.drawTo(scanvas);
 }
-
-function do_square(){
-  var canvas = document.getElementById("div1");
-  var sizeinput = document.getElementById("cc1");
-  var size = sizeinput.value;
-  var context = canvas.getContext("2d");
-  context.clearRect(0, 0, canvas.width, canvas.height);
-  context.fillStyle = "#000000";
-  context.fillRect(10,10,size,size);
-
-  var posX = parseInt(size);
-  posX += 30;
-  context.fillStyle = "#000000";
-  context.fillRect(posX,10,size,size);
+function makeGray(){
+  for (var pixel of grayscale.values()){
+    var avg = (pixel.getRed()+pixel.getGreen()+pixel.getBlue())/3;
+    pixel.setRed(avg);
+    pixel.setGreen(avg);
+    pixel.setBlue(avg);
+  }
+  grayscale.drawTo(scanvas);
 }

@@ -1,21 +1,16 @@
-#t1 {
+h1 {
   text-align: center;
-  color: #3FC4D7;
-  font-family: "Purisa";
-  font-size: 16pt;
-  margin: 10pt;
+  font-size: 54px;
+  color: #240503;
+  font-family: "Comic Sans MS";
 }
-canvas {
-  width: 400px;
-  height: 200px;
-  margin: 10px;
+body{
+  background-color: #FAE55C;
+  margin: 50px;
+}
+canvas{
+  width: 564px;
+  height: 842px;
   border:2px solid #000000;
-  background-color: #D4D41F;
-}
-body {
-  background: #F5DDC7;
-  margin: 20px;
-}
-input {
-  background-color: #CACECE;
+  background-color: #BDC1C4;
 }

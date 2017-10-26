@@ -1,26 +1,19 @@
 <html>
   <head>
-    <title>Canvas</title>
+    <title>Upload image</title>
   </head>
-
   <body>
-    <div id="t1">
-      <h1>Slider</h1>
-    </div>
-
-    <canvas id="div1">
+    <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+    </script>
+    <h1>Upload an image</h1>
+    <canvas id="cnv">
     </canvas>
-
-    <input type="range"
-           value="10"
-           min="10"
-           max="130"
-           oninput="do_square()"
-           id="cc1">
-
-    <input type="color"
-           value="#1DB3B3"
-           onchange="do_color()"
-           id="cc2">
+    <canvas id="scnv">
+    </canvas>
+    <p>
+      Filename:
+      <input type="file" id="finput" multiple="false" accept="image/*" onchange="upload()">
+      <input type="button" id="gr" value="Make Gray" onclick="makeGray()">
+    </p>
   </body>
 </html>
