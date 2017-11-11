@@ -1,16 +1,29 @@
 <html>
   <head>
-    <title>Upload image</title>
+    <title>Filters for image</title>
   </head>
+
   <body>
     <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
     </script>
-    <h1>Upload an image</h1>
-    <canvas id="cnv">
+    <h1>Make filters for image</h1>
+    <canvas id="cnv" style="border:1px solid #000000;">
     </canvas>
     <p>
       Filename:
-      <input type="file" id="finput" multiple="false" accept="image/*" onchange="upload()">
+      <input type="file" id="input" multiple="false" accept="image/*" onchange="loadImage()">
+    </p>
+    <p>
+      Filters:
+      <input type="button" id="gr" value="grayscale" onclick="doGray()">
+      <input type="button" id="rd" value="red" onclick="doRed()">
+      <input type="button" id="oth" value="wave" onclick="doWave()">
+    </p>
+    <p>
+      <input type="button" id="rnb" value="raindow" onclick="doRainbow()">
+    </p>
+    <p>
+      <input type="button" id="clr" value="Reset" onclick="doReset()">
     </p>
   </body>
 </html>
