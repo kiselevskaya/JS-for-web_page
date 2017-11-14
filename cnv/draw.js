@@ -2,6 +2,7 @@ var img = null;
 var canvas = document.getElementById("cnv");
 var fileInput = document.getElementById("input");
 
+
 function loadImage(){
   img = new SimpleImage(fileInput);
   img.drawTo(canvas);
@@ -206,6 +207,52 @@ function rainbow(){
   }
   clearCanvas();
   rainbowImg.drawTo(canvas);
+}
+
+function doBlur(){
+  if (imageIsLoaded(img)){
+    blurFilter();
+  }
+}
+function blurFilter(){
+  var width = img.getWidth();
+  var height = img.getHeight();
+  var blurImg = new SimpleImage(width,height);
+
+  for (var pixel of img.values()){
+    var x = pixel.getX();
+    var y = pixel.getY();
+
+    var randomFloat = Math.random();
+    if (randomFloat < 0.5){
+       blurImg.setPixel(x,y,pixel);
+    }
+    else {
+      var xmin = x-10;
+      var xmax = x+10;
+      if (xmin<0){
+        xmin = 0;
+      }
+      else if (xmax>width){
+        xmax = width-1;
+      }
+      var ymin = y-10;
+      var ymax = y+10;
+      if (ymin<0){
+        ymin = 0;
+      }
+      else if (ymax>height){
+        ymax =height-1;
+      }
+      var nearbyPixel = img.getPixel(randomPixel(xmax,xmin),randomPixel(ymax,ymin));
+      blurImg.setPixel(x,y,nearbyPixel);
+    }
+  }
+  clearCanvas();
+  blurImg.drawTo(canvas);
+}
+function randomPixel(max,min){
+  return Math.floor(Math.random()*(max-min))+(min);
 }
 
 function doReset(){
