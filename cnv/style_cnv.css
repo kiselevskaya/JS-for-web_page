@@ -1,23 +1,20 @@
-#t1 {
+h1 {
   text-align: center;
-  color: #3FC4D7;
-  font-family: "Purisa";
-  border: 3px dashed #69AA00;
-  font-size: 16pt;
-  margin: 10pt;
+  font-size: 50px;
+  color: #078BE3;
+  font-family: "Comic Sans MS";
 }
-canvas {
-  width: 200px;
-  height: 100px;
-  margin: 10px;
-  border:1px solid #000000;
+body{
+  background-color: #02304F;
+  margin: 50px;
 }
-body {
-  background: #8C7272;
+canvas{
+  width: 300px;
+  height: 300px;
+  border:2px solid #000000;
+  background-color: #FFEECF;
   margin: 20px;
 }
-input {
-  background-color: #69AA00;
-  margin: 10pt;
-  font-size: 10pt;
+p{
+  color: #078BE3;
 }

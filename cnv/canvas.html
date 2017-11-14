@@ -1,25 +1,26 @@
 <html>
   <head>
-    <title>Canvas</title>
+    <title>Compose</title>
   </head>
-
   <body>
-    <div id="t1">
-      <h1>Work with canvas</h1>
-    </div>
-
-    <canvas id="div1">
+    <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+    </script>
+    <h1>Create Composition with green screen</h1>
+    <canvas id="cnv">
     </canvas>
-    <canvas id="div2">
+    <canvas id="2cnv">
     </canvas>
-
-    <input type="button"
-           value="Make Orange"
-           onclick="orange_color()"
-           id="cc1">
-    <input type="button"
-           value="Make Blue"
-           onclick="green_color()"
-           id="cc2">
+    <p>
+      Frontground:
+      <input type="file" id="finput" multiple="false" accept="image/*" onchange="loadForegroundImage()">
+    </p>
+    <p>
+      Background:
+      <input type="file" id="2input" multiple="false" accept="image/*" onchange="loadBackgroundImage()">
+    </p>
+    <p>
+      <input type="button" id="cmps" value="Create Composite" onclick="compose()">
+      <input type="button" id="clr" value="Clear canvases" onclick="clearCnvs()">
+    </p>
   </body>
 </html>
